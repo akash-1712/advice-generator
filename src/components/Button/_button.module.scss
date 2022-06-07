@@ -1,0 +1,28 @@
+@import "../../index.module.scss";
+
+.dice {
+  position: relative;
+  top: 58px;
+  padding: 19px;
+  background-color: $NeonGreen;
+  border-radius: 50%;
+  border: none;
+  margin-top: -3rem;
+
+  &:hover {
+    box-shadow: $NeonGreen 0px 0px 40px 2px;
+    cursor: pointer;
+  }
+  @media (max-width: 500px) {
+    padding: 12px;
+    top: 50px;
+    & img {
+      width: 85%;
+    }
+  }
+  @media (max-width: 350px) {
+    top: 42px;
+    padding: 8px;
+    margin-top: -2rem;
+  }
+}

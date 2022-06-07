@@ -3,6 +3,7 @@ $NeonGreen: hsl(150, 100%, 66%);
 $GrayishBlue: hsl(217, 19%, 38%);
 $DarkGrayishBlue: hsl(217, 19%, 24%);
 $DarkBlue: hsl(218, 23%, 16%);
+$VeryDarkBlue: hsl(216, 12%, 8%);
 
 :root body {
   margin: 0;
@@ -12,7 +13,9 @@ $DarkBlue: hsl(218, 23%, 16%);
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
   height: 100%;
-  background-color: $LightCyan;
+  background-color: $DarkBlue;
+  height: 100vh;
+  overflow: hidden;
 }
 *,
 *::after,
