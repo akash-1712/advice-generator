@@ -13,13 +13,18 @@ const Fetch = () => {
   const [httpError, setHttpError] = useState(null);
 
   const submitHandler = async () => {
-    const advice = await fetch("https://api.adviceslip.com/advice");
+    // const advice = await fetch("https://api.adviceslip.com/advice");
+    const advice = await fetch(
+      "https://advice-generator-backend.herokuapp.com/fetch/advice"
+    );
     const message = await advice.json();
     SetAdviceGenerator(message);
   };
   useEffect(() => {
     const fetchAdvice = async () => {
-      const response = await fetch("https://api.adviceslip.com/advice");
+      const response = await fetch(
+        "https://advice-generator-backend.herokuapp.com/fetch/advice"
+      );
       if (!response.ok) {
         throw new Error("Something Went Wrong💀💀");
       }
