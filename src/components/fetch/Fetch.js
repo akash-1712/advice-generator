@@ -15,7 +15,7 @@ const Fetch = () => {
   const submitHandler = async () => {
     // const advice = await fetch("https://api.adviceslip.com/advice");
     const advice = await fetch(
-      "https://advice-generator-backend.herokuapp.com/fetch/advice"
+      "https://advice-generator-backend.onrender.com/fetch/advice"
     );
     const message = await advice.json();
     SetAdviceGenerator(message);
