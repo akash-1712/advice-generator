@@ -23,7 +23,7 @@ const Fetch = () => {
   useEffect(() => {
     const fetchAdvice = async () => {
       const response = await fetch(
-        "https://advice-generator-backend.herokuapp.com/fetch/advice"
+        "https://advice-generator-backend.onrender.com/fetch/advice"
       );
       if (!response.ok) {
         throw new Error("Something Went Wrong💀💀");
